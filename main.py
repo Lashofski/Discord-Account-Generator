@@ -130,7 +130,8 @@ if kill_process == "Y":
        print("                                                                                    ")
        print(green + "----------------"+ red + "-----------------------" + yellow + "----------------------"+ red + "-----------------------")
        print("                                                                                    ")
-       print(red + "𝑫𝒂𝒓 𝒉𝒂𝒍 " + yellow + "𝑺𝒊𝒏𝒈𝒖𝒑" + END)
+       print( red + "─═  "+ yellow  + "𝑺𝒊𝒏𝒈𝒖𝒑𝒊𝒏𝒈" + END)
+       print("                                                       ")
        driver.get("https://discord.com/register")
        driver.implicitly_wait(5)
        file.write("\n ------------------- " )
@@ -138,7 +139,7 @@ if kill_process == "Y":
 
 
        ###gmail
-       print(red + "20%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈" + green + "𝒈𝒎𝒂𝒊𝒍" + END)
+       print(red + "  10%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈 " + green + "𝒈𝒎𝒂𝒊𝒍" + END)
 
        rand = f'{"".join([choice(ascii_letters + digits) for n in range(randint(9, 12))])}'
        email = driver.find_element_by_name("email")
@@ -146,7 +147,7 @@ if kill_process == "Y":
        file.write("\n email : " + rand + '@' + "gmail" + ".com")
 
        # random username
-       print(red + "40%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈" + green + "𝒖𝒔𝒆𝒓𝒏𝒂𝒎𝒆" + END)
+       print(red + "  30%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈 " + green + "𝒖𝒔𝒆𝒓𝒏𝒂𝒎𝒆" + END)
        rand3 = f'{"".join([choice(ascii_letters + digits) for n in range(randint(5, 6))])}'
        username = driver.find_element_by_name("username")
        username.send_keys(rand3)
@@ -154,13 +155,13 @@ if kill_process == "Y":
 
        ###random password
        rand2 = f'{"".join([choice(ascii_letters + digits) for n in range(randint(8, 8))])}'
-       print(red + "60%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈" + green + "𝒑𝒂𝒔𝒔𝒘𝒐𝒓𝒅" + END)
+       print(red + "  40%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈 " + green + "𝒑𝒂𝒔𝒔𝒘𝒐𝒓𝒅" + END)
        password = driver.find_element_by_name("password")
        password.send_keys(rand2)
        file.write("\n password : " + rand2)
        file.write("\n ------------------- " )
-       ###tavalod
-       print(red + "80%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈" + green + "𝒕𝒂𝒓𝒊𝒌𝒉 𝒕𝒂𝒗𝒂𝒍𝒐𝒅" + END)
+       ###brithday
+       print(red + "  50%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈 " + green + "𝒕𝒂𝒓𝒊𝒌𝒉 𝒕𝒂𝒗𝒂𝒍𝒐𝒅" + END)
 
        o1 = driver.find_element_by_xpath(
          "/html/body/div/div[2]/div/div[3]/div/form/div/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[1]")
@@ -178,25 +179,32 @@ if kill_process == "Y":
        s3 = driver.find_element_by_id("react-select-4-option-18")
        s3.click()
 
-        ###sumbit
-       print(red + "85%  " + yellow + "𝑷𝒍𝒛 𝒅𝒐" + green + "𝒄𝒂𝒑𝒕𝒄𝒉𝒂  !!" + END)
-
+        ###sumbiT
        finish = driver.find_element_by_class_name("contents-18-Yxp")
        finish.click()
        driver.maximize_window()
+
+
+       #CAPTCHA
+       driver.maximize_window()
+       print(red + "  80%  " + yellow + "𝑷𝒍𝒛 𝒅𝒐 " + green + "𝒄𝒂𝒑𝒕𝒄𝒉𝒂  !!" + END)
        time.sleep(50)
 
 
-        # finish
-       print(red + "100%  " + blue + "✨𝐶𝑟𝑒𝑎𝑡𝑒𝑑" + END)
-       print(yellow + "𝑺𝒂𝒗𝒆 𝒊𝒏" + blue + " 𝒂𝒄𝒄.𝒕𝒙𝒕" + END)
-       time.sleep(20)
+        # finisH
+       print(red + "  100%  " + blue + "✨𝐶𝑟𝑒𝑎𝑡𝑒𝑑" + END)
+       print("                                                       ")
+       print(red + "─═  "+ yellow + "𝑺𝒂𝒗𝒆 𝒊𝒏" + blue + " 𝒂𝒄𝒄.𝒕𝒙𝒕" + END)
+       print("                                                       ")
 
-       #etelat
 
-       print(green + "𝒖𝒔𝒆𝒓𝒏𝒂𝒎𝒆 : " + yellow + rand3)
-       print(green + "𝒑𝒂𝒔𝒔𝒘𝒐𝒓𝒅 : " + yellow + rand2)
-       print(green + "𝒈𝒎𝒂𝒊𝒍 : " + yellow + rand)
+       #news
+
+       print(red + "   ─" + yellow + " 𝒖𝒔𝒆𝒓𝒏𝒂𝒎𝒆 : " + green + rand3)
+       print(red + "   ─" + yellow + " 𝒑𝒂𝒔𝒔𝒘𝒐𝒓𝒅 : " + green + rand2)
+       print(red + "   ─" + yellow + " 𝒈𝒎𝒂𝒊𝒍 : " + green + rand + '@' + "gmail" + ".com")
+       print("                                                       ")
+
 
 
        edame = input( red + "►─═ " + yellow + "𝒔𝒕𝒐𝒑  ? " + blue +  " 𝒀/𝑵 :" + END)
