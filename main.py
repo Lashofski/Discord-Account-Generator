@@ -1,16 +1,11 @@
-import random
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from string import ascii_letters, digits
 from random import randint, choice
-import os
-import re
 import random
 import requests
 import time
-import sys
-import subprocess
-import os
+
 
 red = '\033[91m'
 END = '\033[0m'
@@ -18,16 +13,17 @@ green = '\033[92m'
 yellow = '\033[93m'
 blue = '\033[92m'
 
+token2 = open("token.txt", "a")
 
 print(yellow +'''____________________________________________________
 |,---.        )    👑 Bʏ 𝑳𝒂𝒔𝒉𝒐𝒇𝒔𝒌𝒊 👑   (         ,---.|
 |) 1 (        `====---    _   ---===='          ) 1 (|
 | \ /                    | |                     \ / |
 |  V      ,-.            |-|                      V  |
-|        ( D )          _|-|_          ＦＡＫＥ.Ｍ    |
+|        ( D )          _|-|_          ＦＡＫＥ.Ｍ     |
 |         `-'         _(_) (_)          DIsᴄᴏʀᴅ      |
 |                    (_) | | L_.                     |
-|     Nima#7272      '      (_  \                    |
+|     𝖑𝖆𝖘𝖍𝖔𝖘𝖐𝖎#8046    '      (_  \                    |
 | / \               (        /  /                / \ |
 |( 1 )                                          ( 1 )|
 | \ / ---==<                             >==---  \ / |
@@ -56,7 +52,7 @@ if kill_process == "Y":
         driver.implicitly_wait(5)
         file.write("\n ------------------- ")
 
-
+         #gmail
         print(red + "  10%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈 " + green + "𝒈𝒎𝒂𝒊𝒍" + END)
         rand = f'{"".join([choice(ascii_letters + digits) for n in range(randint(9, 12))])}'
         email = driver.find_element_by_name("email")
@@ -64,18 +60,15 @@ if kill_process == "Y":
         file.write("\n email : " + rand + '@' + "gmail" + ".com")
 
 
-
-
+         #radnom username from list
         print(red + "  30%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈 " + green + "𝒖𝒔𝒆𝒓𝒏𝒂𝒎𝒆" + END)
-        mylist = ["javad", "mmd", "nikulas", "nima", "shahin", "killer", "fatti", "nightman", "blue man", "secret team",
-                  "aboli", "abolfazel", "mohsen", "kianosh", "kiarash", "Sina", "night killer", "tina", "TnT", "TLS",
-                  "Streetman", "shyan", "wiliyam"]
+        mylist = ["javad", "mmd", "nikulas", "nima", "shahin", "killer", "fatti", "nightman", "blue man", "secret team","aboli", "abolfazel", "mohsen", "kianosh", "kiarash", "Sina", "night killer", "tina", "TnT", "TLS","Streetman", "shyan", "wiliyam"]
         username = driver.find_element_by_name("username")
         username.send_keys(random.choice(mylist))
         file.write("\n username : " + random.choice(mylist))
 
 
-        ###random pars
+        ###random password
         rand2 = f'{"".join([choice(ascii_letters + digits) for n in range(randint(8, 8))])}'
         print(red + "  40%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈 " + green + "𝒑𝒂𝒔𝒔𝒘𝒐𝒓𝒅" + END)
         password = driver.find_element_by_name("password")
@@ -83,20 +76,20 @@ if kill_process == "Y":
         file.write("\n password : " + rand2)
         file.write("\n ------------------- ")
 
-        ###tarikh tavalod
+        #brithday
         print(red + "  50%  " + yellow + "𝑰𝒎𝒑𝒐𝒓𝒕𝒊𝒏𝒈 " + green + "𝒕𝒂𝒓𝒊𝒌𝒉 𝒕𝒂𝒗𝒂𝒍𝒐𝒅" + END)
-        o1 = driver.find_element_by_xpath('/html/body/div/div[2]/div/div[2]/div/form/div/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[1]')
-        o1.click()
+        p1 = driver.find_element_by_xpath('/html/body/div/div[2]/div/div[2]/div/form/div/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[1]')
+        p1.click()
         year = ["react-select-2-option-3", "react-select-2-option-2", "react-select-2-option-1","react-select-2-option-2"]
         s1 = driver.find_element_by_id(random.choice(year))
         s1.click()
-        o2 = driver.find_element_by_xpath("/html/body/div/div[2]/div/div[2]/div/form/div/div[2]/div[4]/div[1]/div[2]/div/div/div/div/div[1]")
-        o2.click()
+        p2 = driver.find_element_by_xpath("/html/body/div/div[2]/div/div[2]/div/form/div/div[2]/div[4]/div[1]/div[2]/div/div/div/div/div[1]")
+        p2.click()
         mounth = ["react-select-3-option-4", "react-select-3-option-5","react-select-3-option-6","react-select-3-option-7","react-select-3-option-8", "react-select-3-option-3"]
         s2 = driver.find_element_by_id(random.choice(mounth))
         s2.click()
-        o3 = driver.find_element_by_xpath("/html/body/div/div[2]/div/div[2]/div/form/div/div[2]/div[4]/div[1]/div[3]/div/div/div/div/div[1]")
-        o3.click()
+        p3 = driver.find_element_by_xpath("/html/body/div/div[2]/div/div[2]/div/form/div/div[2]/div[4]/div[1]/div[3]/div/div/div/div/div[1]")
+        p3.click()
         day = ["react-select-4-option-18", "react-select-4-option-19","react-select-4-option-20", "react-select-4-option-21"]
         s3 = driver.find_element_by_id(random.choice(day))
         s3.click()
@@ -113,6 +106,43 @@ if kill_process == "Y":
         print("                                                       ")
         print("                                                       ")
         time.sleep(70)
+
+        # token
+
+        while True:
+            email = (rand + '@' + "gmail" + '.com')
+            password = (rand2)
+
+            payload = {
+                "email": email,
+                "password": password
+            }
+
+            r = requests.post('https://discord.com/api/v8/auth/login', json=payload).json()
+            if "captcha_key" in r:
+                print(" captcha request , connection timeout ")
+                time.sleep(1)
+            elif "errors" in r:
+                print("Run again.")
+            elif r["token"] == None:
+                break
+            else:
+                token2.write(r["token"])
+                time.sleep(5)
+
+        while True:
+            if r["token"] == None:
+                mfa_payload = {
+                    "ticket": r["ticket"]
+                }
+                r2 = requests.post('https://discord.com/api/v8/auth/mfa/totp', json=mfa_payload).json()
+                if "message" in r2:
+                    time.sleep(1)
+                else:
+                    token2.write(r2["token"])
+                    print(red + " ─═  " + yellow + "𝒔𝒂𝒗𝒆𝒅 " + blue + "𝒕𝒐𝒌𝒆𝒏" + END)
+                    time.sleep(5)
+
 
 
 
